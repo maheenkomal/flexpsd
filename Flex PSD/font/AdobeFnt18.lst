@@ -1,0 +1,109 @@
+%!Adobe-FontList 1.18
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lato-Black
+FamilyName:Lato
+StyleName:Black
+FullName:Lato Black
+MenuName:Lato Black
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Wahab Mustafa\Desktop\Flex PSD\Font\Lato-Black.ttf
+DataFormat:sfntData
+hasSVG:no
+FileLength:69484
+FileModTime:1292353200
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Lato Black
+NameArray:0,Win,16,Lato
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lato-Bold
+FamilyName:Lato
+StyleName:Bold
+FullName:Lato Bold
+MenuName:Lato
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Wahab Mustafa\Desktop\Flex PSD\Font\Lato-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+FileLength:73316
+FileModTime:1292353200
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Lato
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lato-Italic
+FamilyName:Lato
+StyleName:Italic
+FullName:Lato Italic
+MenuName:Lato
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Wahab Mustafa\Desktop\Flex PSD\Font\Lato-Italic.ttf
+DataFormat:sfntData
+hasSVG:no
+FileLength:75744
+FileModTime:1292353200
+WeightClass:400
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,Lato
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lato-Regular
+FamilyName:Lato
+StyleName:Regular
+FullName:Lato Regular
+MenuName:Lato
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Wahab Mustafa\Desktop\Flex PSD\Font\Lato-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+FileLength:75136
+FileModTime:1292353200
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Lato
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lora-Bold
+FamilyName:Lora
+StyleName:Bold
+FullName:Lora Bold
+MenuName:Lora
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Wahab Mustafa\Desktop\Flex PSD\Font\Lora-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+FileLength:123996
+FileModTime:1309892400
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Lora
+%EndFont
+
