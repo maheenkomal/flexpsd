@@ -2,23 +2,27 @@
 <html>
 
 <head>
-    <title>My_Kitchen</title>
+    <title>food_blogger</title>
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!--meta tag to make website work on cross-devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Lora:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;family=Lora:wght@700&amp;display=swap"
         rel="stylesheet">
-    <!--CSS EXTERNAL LINK-->
-    <link rel="stylesheet" href="css/style.css">
+    
     <!-- Font Awesome Icon Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
     <!-- Add the fonts if you want default styling -->
+   
+    <!--CSS EXTERNAL LINK-->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -31,14 +35,27 @@
             <div class="container">
                 <div class="nav-box">
                     <img class="header-logo" src="images/logo.png" alt="missing">
+                    <a href="javascript:void(0)" class="icon"> <i class="fa fa-bars"
+                        aria-hidden="true"></i></a>
                     <div class="header-info">
-                        <ul class="header-ul">
-                            <li><a class="home" href="#home">Home</a></li>
-                            <li><a class="about" href="#news">Chef inspiration</a></li>
-                            <li><a class="recipe" href="#contact">Recipes</a></li>
-                            <li><a class="Contact" href="#about">Contact</a></li>
-                        </ul>
-                        <img class="header-search" src="images/search.png" alt="missing">
+                   
+                            <ul id="menu" class="header-ul">
+
+                                <li><a class="home" href="#home">Home</a></li>
+                                <li><a class="about" href="#news">Chef inspiration</a></li>
+                                <li><a class="recipe" href="#contact">Recipes</a></li>
+                                <li><a class="Contact" href="#about">Contact</a></li>
+
+                            </ul>
+
+                            <form action="" class="search-form">
+                                <label for=""><img class="h-search" src="images/search.png" alt="missing"></label>
+                                <input type="text" placeholder="Search for recipes and blog posts...">
+                            </form>
+                           
+
+
+
                     </div>
                 </div>
             </div>
@@ -75,7 +92,7 @@
         <div class="container">
             <div class="tab-box">
                 <div class="tab-text">
-                    <p class="tab-txt1">We offer you Best & Delicious food</p>
+                    <p class="tab-txt1">We offer you Best &amp; Delicious food</p>
                     <p class="tab-txt2">Creative social proof finders paradigm shift strategy innovator </p>
                 </div>
                 <!-- Tabs // START -->
@@ -178,7 +195,7 @@
             </div>
         </div>
         <!-- Tabs // END -->
-        </div>
+
         <!-- Content // END -->
     </section>
     <!-- Tab SECTION END -->
@@ -186,78 +203,181 @@
     <section id="slider">
         <!-- Slider SECTION Start -->
         <div class="container">
-  <div class="slider-heading">
-      <p class="slider-user">What Our Users Say</p>
-  </div>
+            <div class="slider-heading">
+                <p class="slider-user">What Our Users Say</p>
+            </div>
 
 
 
-            <div class="reviewSlider">
+            <div class="reviewSlider slick-initialized slick-slider"><button class="slick-prev slick-arrow"
+                    aria-label="Previous" type="button">Previous</button>
 
-                <div class="slider-info">
-                    <div class="row">
-                        <div class="col5 slider-left">
-                               <div class="slider-image">
-                            <img class="round-shape" src="images/women.png" alt="missing">
-                        </div>
-                            <div class="slider-text">
-                                <div class="slider-h1">Carrie Gordon</div>
-                                <div class="slider-h2">NOVI SAD, SERBIA</div>
+                <div class="slick-list draggable">
+                    <div class="slick-track"
+                        style="opacity: 1; width: 7847px; transform: translate3d(-1121px, 0px, 0px);">
+                        <div class="slider-info slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true"
+                            tabindex="-1" style="width: 1121px;">
+                            <div class="row">
+                                <div class="col5 slider-left">
+                                    <div class="slider-image">
+                                        <img class="round-shape" src="images/women.png" alt="missing">
+                                    </div>
+                                    <div class="slider-text">
+                                        <div class="slider-h1">Carrie Gordon</div>
+                                        <div class="slider-h2">NOVI SAD, SERBIA</div>
+                                    </div>
+                                </div>
+                                <div class="col7 slider-txt">
+                                    <p class="slider-p">
+                                        “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy
+                                        eirmod
+                                        tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
+                                        At vero eos et<br> accusam et justo duo dolores et ea rebum.”
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col7 slider-txt">
-                            <p class="slider-p">
-                            “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy eirmod
-                            tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
-                            At vero eos et<br> accusam et justo duo dolores et ea rebum.”
-                        </p>
+                        <div class="slider-info slick-slide slick-current slick-active" data-slick-index="0"
+                            aria-hidden="false" tabindex="0" style="width: 1121px;">
+                            <div class="row">
+                                <div class="col5 slider-left">
+                                    <div class="slider-image">
+                                        <img class="round-shape" src="images/women.png" alt="missing">
+                                    </div>
+                                    <div class="slider-text">
+                                        <div class="slider-h1">Carrie Gordon</div>
+                                        <div class="slider-h2">NOVI SAD, SERBIA</div>
+                                    </div>
+                                </div>
+                                <div class="col7 slider-txt">
+                                    <p class="slider-p">
+                                        “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy
+                                        eirmod
+                                        tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
+                                        At vero eos et<br> accusam et justo duo dolores et ea rebum.”
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-info slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1"
+                            style="width: 1121px;">
+                            <div class="row">
+                                <div class="col5 slider-left">
+                                    <div class="slider-image">
+                                        <img class="round-shape" src="images/women.png" alt="missing">
+                                    </div>
+                                    <div class="slider-text">
+                                        <div class="slider-h1">Carrie Gordon</div>
+                                        <div class="slider-h2">NOVI SAD, SERBIA</div>
+                                    </div>
+                                </div>
+                                <div class="col7 slider-txt">
+                                    <p class="slider-p">
+                                        “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy
+                                        eirmod
+                                        tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
+                                        At vero eos et<br> accusam et justo duo dolores et ea rebum.”
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-info slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1"
+                            style="width: 1121px;">
+                            <div class="row">
+                                <div class="col5 slider-left">
+                                    <div class="slider-image">
+                                        <img class="round-shape" src="images/women.png" alt="missing">
+                                    </div>
+                                    <div class="slider-text">
+                                        <div class="slider-h1">Carrie Gordon</div>
+                                        <div class="slider-h2">NOVI SAD, SERBIA</div>
+                                    </div>
+                                </div>
+                                <div class="col7 slider-txt">
+                                    <p class="slider-p">
+                                        “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy
+                                        eirmod
+                                        tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
+                                        At vero eos et<br> accusam et justo duo dolores et ea rebum.”
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-info slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true"
+                            tabindex="-1" style="width: 1121px;">
+                            <div class="row">
+                                <div class="col5 slider-left">
+                                    <div class="slider-image">
+                                        <img class="round-shape" src="images/women.png" alt="missing">
+                                    </div>
+                                    <div class="slider-text">
+                                        <div class="slider-h1">Carrie Gordon</div>
+                                        <div class="slider-h2">NOVI SAD, SERBIA</div>
+                                    </div>
+                                </div>
+                                <div class="col7 slider-txt">
+                                    <p class="slider-p">
+                                        “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy
+                                        eirmod
+                                        tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
+                                        At vero eos et<br> accusam et justo duo dolores et ea rebum.”
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-info slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true"
+                            tabindex="-1" style="width: 1121px;">
+                            <div class="row">
+                                <div class="col5 slider-left">
+                                    <div class="slider-image">
+                                        <img class="round-shape" src="images/women.png" alt="missing">
+                                    </div>
+                                    <div class="slider-text">
+                                        <div class="slider-h1">Carrie Gordon</div>
+                                        <div class="slider-h2">NOVI SAD, SERBIA</div>
+                                    </div>
+                                </div>
+                                <div class="col7 slider-txt">
+                                    <p class="slider-p">
+                                        “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy
+                                        eirmod
+                                        tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
+                                        At vero eos et<br> accusam et justo duo dolores et ea rebum.”
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-info slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true"
+                            tabindex="-1" style="width: 1121px;">
+                            <div class="row">
+                                <div class="col5 slider-left">
+                                    <div class="slider-image">
+                                        <img class="round-shape" src="images/women.png" alt="missing">
+                                    </div>
+                                    <div class="slider-text">
+                                        <div class="slider-h1">Carrie Gordon</div>
+                                        <div class="slider-h2">NOVI SAD, SERBIA</div>
+                                    </div>
+                                </div>
+                                <div class="col7 slider-txt">
+                                    <p class="slider-p">
+                                        “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy
+                                        eirmod
+                                        tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
+                                        At vero eos et<br> accusam et justo duo dolores et ea rebum.”
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="slider-info">
-                    <div class="row">
-                        <div class="col5 slider-left">
-                               <div class="slider-image">
-                            <img class="round-shape" src="images/women.png" alt="missing">
-                        </div>
-                            <div class="slider-text">
-                                <div class="slider-h1">Carrie Gordon</div>
-                                <div class="slider-h2">NOVI SAD, SERBIA</div>
-                            </div>
-                        </div>
-                        <div class="col7 slider-txt">
-                            <p class="slider-p">
-                            “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy eirmod
-                            tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
-                            At vero eos et<br> accusam et justo duo dolores et ea rebum.”
-                        </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slider-info">
-                    <div class="row">
-                        <div class="col5 slider-left">
-                               <div class="slider-image">
-                            <img class="round-shape" src="images/women.png" alt="missing">
-                        </div>
-                            <div class="slider-text">
-                                <div class="slider-h1">Carrie Gordon</div>
-                                <div class="slider-h2">NOVI SAD, SERBIA</div>
-                            </div>
-                        </div>
-                        <div class="col7 slider-txt">
-                            <p class="slider-p">
-                            “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy eirmod
-                            tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
-                            At vero eos et<br> accusam et justo duo dolores et ea rebum.”
-                        </p>
-                        </div>
-                    </div>
-                </div>
 
 
+
+
+
+                <button class="slick-next slick-arrow" aria-label="Next" type="button">Next</button>
             </div>
         </div>
     </section>
@@ -275,125 +395,251 @@
             </div>
 
             <div class="recipes-card">
+
                 <div class="card">
-                    <!-- <img class="review-img" src="images/card1.png" alt="missing"> -->
-                    <div class="review-img img1"></div>
-                    <div class="container">
+                    <img class="review-img" src="images/card1.png" alt="missing">
+                    <div class="card-container">
+
                         <p class="card-txt">SNACKS</p>
                         <p class="card-txt1">Spanish Tortila</p>
                         <div class="card-icon">
-                            <img class="icon1-img" src="images/clock.png" alt="missing">
-                            <p class="icon1-txt">20-30 min</p>
-                            <p class="icon2-txt">12</p>
-                            <img class="icon2-img" src="images/comment.png" alt="missing'">
+                            <div class="icon-1">
+                                <img class="icon1-img" src="images/clock.png" alt="missing">
+                                <p class="icon1-txt">20-30 min</p>
+                            </div>
+                            <div class="icon-2">
+                                <p class="icon2-txt">12</p>
+                                <img class="icon2-img" src="images/comment.png" alt="missing'">
+                            </div>
                         </div>
                     </div>
+                    <a href="">
+                        <div class="overlay">
+                            <p class="card4-txt">START COOKING!</p>
+                            <p class="card4-txt1">Check other recipes</p>
+                        </div>
+                    </a>
+
                 </div>
 
                 <div class="card">
+                    <div class="card-tag">
+                        <p class="cardtag-txt">TRENDING</p>
+                    </div>
                     <img class="review-img" src="images/card2.png" alt="missing">
-                    <div class="container">
+                    <div class="card-container">
                         <p class="card-txt">SNACKS</p>
                         <p class="card-txt1">Spanish Tortila</p>
                         <div class="card-icon">
-                            <img class="icon1-img" src="images/clock.png" alt="missing">
-                            <p class="icon1-txt1">10 min</p>
-                            <p class="icon2-txt">7</p>
-                            <img class="icon2-img" src="images/comment.png" alt="missing'">
+                            <div class="icon-1">
+                                <img class="icon1-img" src="images/clock.png" alt="missing">
+                                <p class="icon1-txt1">10 min</p>
+                            </div>
+                            <div class="icon-2">
+                                <p class="icon2-txt">7</p>
+                                <img class="icon2-img" src="images/comment.png" alt="missing'">
+                            </div>
                         </div>
                     </div>
+                    <a href="">
+                        <div class="overlay">
+                            <p class="card4-txt">START COOKING!</p>
+                            <p class="card4-txt1">Check other recipes</p>
+                        </div>
+                    </a>
+
                 </div>
 
                 <div class="card">
                     <img class="review-img" src="images/card3.png" alt="missing">
-                    <div class="container">
+                    <div class="card-container">
                         <p class="card-txt">SNACKS</p>
                         <p class="card-txt1">Spanish Tortila</p>
                         <div class="card-icon">
-                            <img class="icon1-img" src="images/clock.png" alt="missing">
-                            <p class="icon1-txt2">15-20 min</p>
-                            <p class="icon2-txt">2</p>
-                            <img class="icon2-img" src="images/comment.png" alt="missing'">
+                            <div class="icon-1">
+                                <img class="icon1-img" src="images/clock.png" alt="missing">
+                                <p class="icon1-txt2">15-20 min</p>
+                            </div>
+                            <div class="icon-2">
+                                <p class="icon2-txt">2</p>
+                                <img class="icon2-img" src="images/comment.png" alt="missing'">
+                            </div>
                         </div>
                     </div>
+                    <a href="">
+                        <div class="overlay">
+                            <p class="card4-txt">START COOKING!</p>
+                            <p class="card4-txt1">Check other recipes</p>
+                        </div>
+                    </a>
+
                 </div>
 
 
                 <div class="card">
                     <img class="review-img" src="images/card1.png" alt="missing">
-                    <div class="container">
+                    <div class="card-container">
                         <p class="card-txt">SNACKS</p>
                         <p class="card-txt1">Spanish Tortila</p>
                         <div class="card-icon">
-                            <img class="icon1-img" src="images/clock.png" alt="missing">
-                            <p class="icon1-txt">20-30 min</p>
-                            <p class="icon2-txt">12</p>
-                            <img class="icon2-img" src="images/comment.png" alt="missing'">
+                            <div class="icon-1">
+                                <img class="icon1-img" src="images/clock.png" alt="missing">
+                                <p class="icon1-txt">20-30 min</p>
+                            </div>
+                            <div class="icon-2">
+                                <p class="icon2-txt">12</p>
+                                <img class="icon2-img" src="images/comment.png" alt="missing'">
+                            </div>
                         </div>
                     </div>
-                </div>
-
-
-
-            </div>
-            
-                <div class="overlay">
-                    <div class="card">
-                    <div class="review4-img" src="images/card4.png" alt="missing">
-                        <div class="card4-text">
+                    <a href="">
+                        <div class="overlay">
                             <p class="card4-txt">START COOKING!</p>
                             <p class="card4-txt1">Check other recipes</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                </div>
+
+
+            </div>
+
         </div>
+
+
 
     </section>
     <!-- Recipes SECTION End -->
 
     <section id="popular">
-   <!-- Popular SECTION start -->
-<div class="container">
-<div class="row">
-<div class="col6 popular-recipe">
-<div class="popular-tag">
-    <p class="popular-txt">POPULAR THIS WEEK</p>
-</div>
-<div class="popular-info">
-    <p class="popular-heading">Hummus with Spiced Summer Squash and Lamb</p>
-<p class="popular-para">If you’re making this hummus recipe for a finicky crowd, serve all the toppings in separate bowls and let people help themselves.
-     Lots of toasted pita for scooping up everything is nonnegotiable. </p>
-</div>
+        <!-- Popular SECTION start -->
+        <div class="container">
+            <div class="row">
+                <div class="col6 popular-recipe">
+                    <div class="popular-tag">
+                        <p class="popular-txt">POPULAR THIS WEEK</p>
+                    </div>
+                    <div class="popular-info">
+                        <p class="popular-heading">Hummus with Spiced Summer Squash and Lamb</p>
+                        <p class="popular-para">If you’re making this hummus recipe for a finicky crowd, serve all the
+                            toppings in separate bowls and let people help themselves.
+                            Lots of toasted pita for scooping up everything is nonnegotiable. </p>
+                    </div>
 
-<div class="popular-ing">
-<p class="ing-start">Ingridients</p>
-    <div class="ing-1">
-        <p class="ing-h"></p>
-    </div>
+                    <div class="row popular-ing">
+                        <p class="ing-start">Ingridients</p>
+                    </div>
+                    <div class="popular-class">
+                        <div class="col6 ing-1">
+                            <p class="ing1-h">Lamb &amp; Assembly</p>
 
-    <div class="ing-2">
-        <p class="ing1-h"></p>
-  </div>
+                            <p class="my-para"> - 2 tsp. kosher salt</p>
+                            <p class="my-para"> - 1½ tsp. ground coriander</p>
+                            <p class="my-para"> - 1½ tsp. ground cumin</p>
+                            <p class="my-para"> - ¼ tsp. crushed red pepper flakes</p>
+                            <p class="my-para"> - 2 tsp. extra-virgin olive oil, divided</p>
 
-</div>
-</div>
+                        </div>
 
+                        <div class="col6 ing-2">
+                            <p class="ing2-h">Hummus</p>
+                            <p class="my-para"> - 2 15.5-oz. cans chickpeas, rinsed</p>
+                            <p class="my-para"> - 1 garlic clove, coarsely chopped</p>
+                            <p class="my-para"> - ½ cup tahini</p>
+                            <p class="my-para"> - 3 Tbsp. fresh lemon juice</p>
+                            <p class="my-para"> - 1¼ tsp. kosher salts</p>
+                        </div>
+                    </div>
 
+                    <div class="popular-button">
+                        <button class="popular-btn">Read full recipe</button>
 
+                    </div>
+                </div>
 
+                <div class="col6 popular-image">
+                    <img class="popular-img" src="images/plate.png" alt="missing">
+                </div>
+            </div>
 
-</div>
+            <div class="popular-logos">
+                <img class="p-logo" src="images/uni.png" alt="missing">
+                <img class="p-logo" src="images/wri.png" alt="missing">
+                <img class="p-logo" src="images/che.png" alt="missing">
+                <img class="p-logo" src="images/gre.png" alt="missing">
+                <img class="p-logo" src="images/kra.png" alt="missing">
+            </div>
+        </div>
+    </section>
+    <!-- Recipes SECTION End -->
+    <section id="subscribtion">
+        <div class="sub-image">
+            <!-- <div class="sub-img"></div> -->
+            <p class="sub-text">Subscribe to our Newsletters</p>
 
-</div>
-<div class=" popular-image">
-    <img src="images/plate.png" alt="missing">
-</div>
+            <div class="sub-info">
+                <div class="col9 sub-input">
+                    <input class="sub-inp" type="text" name="mail" placeholder="Email address" value="Email address">
+                </div>
+                <div class="sub-button">
+                    <button class="sub-btn">Subscribe</button>
+                </div>
+            </div>
+            <p class="sub-txt">We will not share your informations with anyone</p>
+        </div>
+    </section>
+
+    <footer id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col6 contact-sec1">
+                    <img class="contact-logo" src="images/contact-logo.png" alt="missing">
+                    <div class="contact-text">
+                        <p class="contact-txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<br> sed diam
+                            nonumy eirmod tempor invidunt ut labore et <br> dolore magna aliquyam erat, sed diam
+                            voluptua. </p>
+                        <p class="contact-tele"><a href="tel:(+61)  979 185 942">T: &nbsp; (+61) 979 185 942 </a></p>
+                        <p class="contact-mail"><a href="mailto:contact@foodblogger.com">E: &nbsp;
+                                contact@foodblogger.com</a></p>
+                    </div>
+                </div>
+
+                <div class="col6 contact-sec2">
+                    <div class="contact-reci">
+                        <p class="contact-h">Popular Recipes</p>
+                        <p class="contact-index"><a href="">Beef Medalion</a></p>
+                        <p class="contact-index"><a href="">Penne Arrabiata</a></p>
+                        <p class="contact-index"><a href="">Sweet &amp; Chicken</a></p>
+                        <p class="contact-index"><a href="">Thai Chicken Curry</a></p>
+                        <p class="contact-index"><a href="">Fish Curry</a></p>
+                    </div>
+
+                    <div class="contact-links">
+                        <p class="contact-h">Usefull Links</p>
+                        <p class="contact-index"><a href="">Home</a></p>
+                        <p class="contact-index"><a href="">Chef Inspirations</a></p>
+                        <p class="contact-index"><a href="">Recipes</a></p>
+                        <p class="contact-index"><a href="">Contact</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="copyright">
+        <div class="container">
+            <div class="copy-info">
+                <!-- <img class="copy-icon" src="" alt=""> -->
+                <p class="copy-text">© Copyright 2019 FoodBlogger. All rights reserved.</p>
+            </div>
+        </div>
 
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> 
+    
+    <!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
+
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
     <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <!-- <script type="text/javascript">
@@ -411,17 +657,34 @@ $(document).ready(function(){
 
 
     <script>
-        // $('.reviewSlider').slick({});
-        $(document).ready(function () {
-            $('.reviewSlider').slick({
-                infinite: true,
-                slidesToScroll: 1,
-                slidesToShow: 1,
-                speed: 300,
-                
-                
-            });
-        });
+        // $('.reviewSlider').slick();
+        $(".reviewSlider").not('.slick-initialized').slick();
+
+            // $('.reviewSlider').slick({
+            //     infinite: true,
+            //     slidesToScroll: 1,
+            //     slidesToShow: 1
+            // });
+    </script>
+
+    <script>
+        // function myfunc() {
+        //     var showhide = document.getElementById('menu');
+        //     if (showhide.style.display === "block") {
+        //         showhide.style.display = "none";
+        //     } else {
+        //         showhide.style.display = "block";
+        //     }
+        // }
+
+        $('.icon').click(function(){
+    $('.header-info').toggleClass("icon-style");
+});
+    </script>
+    <script>
+        $('.search-form').click(function(){
+    $('.header-info').toggleClass("search-style");
+});
     </script>
 </body>
 
