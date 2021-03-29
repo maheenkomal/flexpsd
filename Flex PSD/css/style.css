@@ -148,7 +148,7 @@ img.banner-img2 {
   position: relative;
   right: -68px;
 }
-.header-text::before{
+#header .header-text::before{
   content: "";
   position: absolute;
   background-image: url(../images/cloud.png);
@@ -160,19 +160,19 @@ img.banner-img2 {
   left: -23.5%;
   z-index: -1;
 }
-.col6.header-images {
+#header .col6.header-images {
   padding: 74px 0px 113px;
 }
 
-p.header-txt1 {
+#header p.header-txt1 {
   padding: 12px 0px 0px;
   line-height: 82px;
 }
 
-.header-button {
+#header .header-button {
   padding: 15px 0px 0px;
 }
-.home::after{
+#header .home::after{
   content: "";
   position: absolute;
   border-bottom: 2px solid #f3a742;
@@ -409,7 +409,7 @@ background-color: #fafcff;
   max-width: 208px;
   top: 47px;
   display: block;
-  left: -9px;
+  left: -8px;
   width: 100%;
 }
 /* .tab-content{
@@ -1149,7 +1149,6 @@ width: 100%;
   
 z-index: 22;
 }
-#header .header-info.icon-style .header-ul{}
 }
 
 
