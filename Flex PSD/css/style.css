@@ -1176,7 +1176,9 @@ font-size: 14px;
 
 @media only screen and (max-width: 992px) {
 
-
+  #header li{
+    padding: 0px 18px;
+  }
   #header .icon{
     display: block;
     padding: 0px 15px;
@@ -1587,5 +1589,5 @@ display: block;
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-9px, -7px);
 }
