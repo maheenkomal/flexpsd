@@ -12,15 +12,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;family=Lora:wght@700&amp;display=swap"
         rel="stylesheet">
-    
+
     <!-- Font Awesome Icon Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <!-- Add the fonts if you want default styling -->
-   
+    <!-- ADD the Animation if you want default styling-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
     <!--CSS EXTERNAL LINK-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -33,43 +34,39 @@
         <nav>
             <!-- Nav-start -->
             <div class="container">
-                <div class="nav-box">
+                <div class="nav-box" >
                     <img class="header-logo" src="images/logo.png" alt="missing">
                     <div class="icon" onclick="myFunction(this)">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
-                      </div>
+                    </div>
                     <div class="header-info">
-                   
-                            <ul id="menu" class="header-ul">
 
-                                <li><a class="home" href="#home">Home</a></li>
-                                <li><a class="about" href="#news">Chef inspiration</a></li>
-                                <li><a class="recipe" href="#contact">Recipes</a></li>
-                                <li><a class="Contact" href="#about">Contact</a></li>
+                        <ul id="menu" class="header-ul">
 
-                            </ul>
+                            <li><a class="home active" href="#home">Home</a></li>
+                            <li><a class="about" href="#news">Chef inspiration</a></li>
+                            <li><a class="recipe" href="#contact">Recipes</a></li>
+                            <li><a class="Contact" href="#about">Contact</a></li>
 
-                            <form action="" class="search-form">
-                                <label for=""><img class="h-search" src="images/search.png" alt="missing"></label>
-                                <input type="text" placeholder="Search for recipes and blog posts...">
-                            </form>
-                           
+                        </ul>
 
-
-
+                        <form action="" class="search-form">
+                            <label for=""><img class="h-search" src="images/search.png" alt="missing"></label>
+                            <input type="text" placeholder="Search for recipes and blog posts...">
+                        </form>
                     </div>
                 </div>
             </div>
         </nav>
         <!-- Nav-end -->
-        <div class="banner">
+        <div class="banner"  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="30">
             <!-- Banner-start -->
             <div class="container">
                 <div class="row">
                     <div class="col6 header-text">
-                        <p class="header-txt1">It’s time for<br>
+                        <p class="fade-right header-txt1">It’s time for<br>
                             Cooking!</p>
                         <p class="header-txt2">
                             Do you want to get something delicious, special<br> and healthy? We are sincerely for your
@@ -94,7 +91,7 @@
         <!-- Content // START -->
         <div class="container">
             <div class="tab-box">
-                <div class="tab-text">
+                <div   data-aos="fade-up"  class=" tab-text" data-aos-duration="1000" data-aos-delay="30">
                     <p class="tab-txt1">We offer you Best &amp; Delicious food</p>
                     <p class="tab-txt2">Creative social proof finders paradigm shift strategy innovator </p>
                 </div>
@@ -102,11 +99,11 @@
 
                 <div class="tab-input">
                     <input type="radio" name="tabs" id="tab1" checked="">
-                    <label for="tab1" class="tab1">1.Breakfast</label>
+                    <label for="tab1" class="tab1">1.&nbsp;Breakfast</label>
                     <input type="radio" name="tabs" id="tab2">
-                    <label for="tab2" class="tab2">2.Lunch</label>
+                    <label for="tab2" class="tab2">2.&nbsp;Lunch</label>
                     <input type="radio" name="tabs" id="tab3">
-                    <label for="tab3" class="tab3">3.Dinner</label>
+                    <label for="tab3" class="tab3">3.&nbsp;Dinner</label>
 
 
                     <div id="tab-content1" class="tab-content1">
@@ -207,95 +204,79 @@
         <!-- Slider SECTION Start -->
         <div class="container">
             <div class="slider-heading">
-                <p class="slider-user">What Our Users Say</p>
+                <p class="slider-user" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="30">What Our Users Say</p>
             </div>
- <div class="reviewSlider">
-     <div class="slider-info">
-        <div class="row">
-            <div class="col5 slider-left">
-                <div class="slider-image">
-                    <img class="round-shape" src="images/women.png" alt="missing">
+            <div class="reviewSlider">
+                <div class="slider-info">
+                    <div class="row">
+                        <div class="col5 slider-left">
+                            <div class="slider-image">
+                                <img class="round-shape" src="images/women.png" alt="missing">
+                            </div>
+                            <div class="slider-text">
+                                <div class="slider-h1">Carrie Gordon</div>
+                                <div class="slider-h2">NOVI SAD, SERBIA</div>
+                            </div>
+                        </div>
+                        <div class="col7 slider-txt">
+                            <p class="slider-p">
+                                “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy
+                                eirmod
+                                tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
+                                At vero eos et<br> accusam et justo duo dolores et ea rebum.”
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="slider-text">
-                    <div class="slider-h1">Carrie Gordon</div>
-                    <div class="slider-h2">NOVI SAD, SERBIA</div>
+
+
+                <div class="slider-info">
+                    <div class="row">
+                        <div class="col5 slider-left">
+                            <div class="slider-image">
+                                <img class="round-shape" src="images/women.png" alt="missing">
+                            </div>
+                            <div class="slider-text">
+                                <div class="slider-h1">Carrie Gordon</div>
+                                <div class="slider-h2">NOVI SAD, SERBIA</div>
+                            </div>
+                        </div>
+                        <div class="col7 slider-txt">
+                            <p class="slider-p">
+                                “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy
+                                eirmod
+                                tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
+                                At vero eos et<br> accusam et justo duo dolores et ea rebum.”
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="slider-info">
+                    <div class="row subs-col">
+                        <div class="col5 slider-left">
+                            <div class="slider-image">
+                                <img class="round-shape" src="images/women.png" alt="missing">
+                            </div>
+                            <div class="slider-text">
+                                <div class="slider-h1">Carrie Gordon</div>
+                                <div class="slider-h2">NOVI SAD, SERBIA</div>
+                            </div>
+                        </div>
+                        <div class="col7 slider-txt">
+                            <p class="slider-p">
+                                “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy
+                                eirmod
+                                tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
+                                At vero eos et<br> accusam et justo duo dolores et ea rebum.”
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col7 slider-txt">
-                <p class="slider-p">
-                    “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy
-                    eirmod
-                    tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
-                    At vero eos et<br> accusam et justo duo dolores et ea rebum.”
-                </p>
-            </div>
-        </div>
-
-     </div>
-   
-
-     <div class="slider-info">
-        <div class="row">
-            <div class="col5 slider-left">
-                <div class="slider-image">
-                    <img class="round-shape" src="images/women.png" alt="missing">
-                </div>
-                <div class="slider-text">
-                    <div class="slider-h1">Carrie Gordon</div>
-                    <div class="slider-h2">NOVI SAD, SERBIA</div>
-                </div>
-            </div>
-            <div class="col7 slider-txt">
-                <p class="slider-p">
-                    “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy
-                    eirmod
-                    tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
-                    At vero eos et<br> accusam et justo duo dolores et ea rebum.”
-                </p>
-            </div>
-        </div>
-
-     </div>
-
-
-     <div  class="slider-info">
-        <div class="row subs-col">
-            <div class="col5 slider-left">
-                <div class="slider-image">
-                    <img class="round-shape" src="images/women.png" alt="missing">
-                </div>
-                <div class="slider-text">
-                    <div class="slider-h1">Carrie Gordon</div>
-                    <div class="slider-h2">NOVI SAD, SERBIA</div>
-                </div>
-            </div>
-            <div class="col7 slider-txt">
-                <p class="slider-p">
-                    “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br> diam nonumy
-                    eirmod
-                    tempor invidunt ut labore et dolore<br> magna aliquyam erat, sed diam voluptua.
-                    At vero eos et<br> accusam et justo duo dolores et ea rebum.”
-                </p>
-            </div>
-        </div>
-
-     </div>
-
-
-
-
-
-
-
-
- </div>
-
-
-
-
-
-                
-            
         </div>
     </section>
     <!-- Slider SECTION End -->
@@ -304,7 +285,7 @@
     <section id="recipes">
         <!--   Recipes SECTION Start -->
         <div class="container">
-            <div class="recipes-text">
+            <div class="recipes-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="30">
                 <p class="recipes-txt">
                     Our latest recipes
                 </p>
@@ -345,8 +326,8 @@
                     </div>
                     <img class="review-img" src="images/card2.png" alt="missing">
                     <div class="card-container">
-                        <p class="card-txt">SNACKS</p>
-                        <p class="card-txt1">Spanish Tortila</p>
+                        <p class="card-txt">BREAKFAST</p>
+                        <p class="card-txt1">Healthy oaty fruity <br> cereal</p>
                         <div class="card-icon">
                             <div class="icon-1">
                                 <img class="icon1-img" src="images/clock.png" alt="missing">
@@ -370,8 +351,8 @@
                 <div class="card">
                     <img class="review-img" src="images/card3.png" alt="missing">
                     <div class="card-container">
-                        <p class="card-txt">SNACKS</p>
-                        <p class="card-txt1">Spanish Tortila</p>
+                        <p class="card-txt">SAUCES</p>
+                        <p class="card-txt1">Cheat’s cranberry <br> sauce</p>
                         <div class="card-icon">
                             <div class="icon-1">
                                 <img class="icon1-img" src="images/clock.png" alt="missing">
@@ -417,12 +398,9 @@
                     </a>
                 </div>
 
-
             </div>
 
         </div>
-
-
 
     </section>
     <!-- Recipes SECTION End -->
@@ -431,7 +409,7 @@
         <!-- Popular SECTION start -->
         <div class="container">
             <div class="row">
-                <div class="col6 popular-recipe">
+                <div class="col6 popular-recipe" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="30" >
                     <div class="popular-tag">
                         <p class="popular-txt">POPULAR THIS WEEK</p>
                     </div>
@@ -478,7 +456,7 @@
                 </div>
             </div>
 
-            <div class="popular-logos">
+            <div class="popular-logos" >
                 <img class="p-logo" src="images/uni.png" alt="missing">
                 <img class="p-logo" src="images/wri.png" alt="missing">
                 <img class="p-logo" src="images/che.png" alt="missing">
@@ -487,10 +465,13 @@
             </div>
         </div>
     </section>
-    <!-- Recipes SECTION End -->
+    <!-- Popular SECTION End -->
+
     <section id="subscribtion">
-        <div class="sub-image">
-            <!-- <div class="sub-img"></div> -->
+        <!-- Subscribtion SECTION Start -->
+        <div class="sub-image" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="10000">
             <p class="sub-text">Subscribe to our Newsletters</p>
 
             <div class="sub-info">
@@ -507,35 +488,36 @@
 
     <footer id="contact-us">
         <div class="container">
-            <div class="row">
-                <div class="col6 contact-sec1">
+            <div class="row" data-aos-delay="30" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-anchor-placement="center-bottom">
+                <div class="col6 contact-sec1" >
                     <img class="contact-logo" src="images/contact-logo.png" alt="missing">
                     <div class="contact-text">
                         <p class="contact-txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<br> sed diam
                             nonumy eirmod tempor invidunt ut labore et <br> dolore magna aliquyam erat, sed diam
                             voluptua. </p>
-                        <p class="contact-tele"><a href="tel:(+61)  979 185 942">T: &nbsp; (+61) 979 185 942 </a></p>
-                        <p class="contact-mail"><a href="mailto:contact@foodblogger.com">E: &nbsp;
-                                contact@foodblogger.com</a></p>
+                        <a class="contact-tele" href="tel:(+61)  979 185 942">T: &nbsp; (+61) 979 185 942 </a>
+                   <a class="contact-mail" href="mailto:contact@foodblogger.com">E: &nbsp;
+                                contact@foodblogger.com</a>
                     </div>
                 </div>
 
                 <div class="col6 contact-sec2">
                     <div class="contact-reci">
                         <p class="contact-h">Popular Recipes</p>
-                        <p class="contact-index"><a href="">Beef Medalion</a></p>
-                        <p class="contact-index"><a href="">Penne Arrabiata</a></p>
-                        <p class="contact-index"><a href="">Sweet &amp; Chicken</a></p>
-                        <p class="contact-index"><a href="">Thai Chicken Curry</a></p>
-                        <p class="contact-index"><a href="">Fish Curry</a></p>
+                       <a class="contact-index" href="">Beef Medalion</a>
+                       <a class="contact-index" href="">Penne Arrabiata</a>
+                       <a class="contact-index" href="">Sweet &amp; Chicken</a>
+                       <a class="contact-index" href="">Thai Chicken Curry</a>
+                       <a class="contact-index" href="">Fish Curry</a>
                     </div>
 
                     <div class="contact-links">
                         <p class="contact-h">Usefull Links</p>
-                        <p class="contact-index"><a href="">Home</a></p>
-                        <p class="contact-index"><a href="">Chef Inspirations</a></p>
-                        <p class="contact-index"><a href="">Recipes</a></p>
-                        <p class="contact-index"><a href="">Contact</a></p>
+                       <a class="contact-index" href="">Home</a>
+                       <a class="contact-index" href="">Chef Inspirations</a>
+                       <a class="contact-index" href="">Recipes</a>
+                       <a class="contact-index" href="">Contact</a>
                     </div>
                 </div>
             </div>
@@ -544,70 +526,42 @@
 
     <section id="copyright">
         <div class="container">
-            <div class="copy-info">
-                <!-- <img class="copy-icon" src="" alt=""> -->
-                <p class="copy-text">© Copyright 2019 FoodBlogger. All rights reserved.</p>
+            <div class="copy-info" >
+                <p class="copy-text">&copy; Copyright 2019 FoodBlogger. All rights reserved.</p>
             </div>
         </div>
-
+        <!-- Subscribtion SECTION End -->
     </section>
 
+    <!-- Script Start -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> 
-    
-    <!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
-
-    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
-    <!-- <script type="text/javascript">
-$(document).ready(function(){
-  $('.single-item').slick({
-    dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true
-
-  });
-});
-  </script> -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        // $('.reviewSlider').slick();
         $(".reviewSlider").not('.slick-initialized').slick();
-
-            // $('.reviewSlider').slick({
-            //     infinite: true,
-            //     slidesToScroll: 1,
-            //     slidesToShow: 1
-            // });
     </script>
 
     <script>
-        // function myfunc() {
-        //     var showhide = document.getElementById('menu');
-        //     if (showhide.style.display === "block") {
-        //         showhide.style.display = "none";
-        //     } else {
-        //         showhide.style.display = "block";
-        //     }
-        // }
-
-        $('.icon').click(function(){
-    $('.header-info').toggleClass("icon-style");
-});
+        $('.icon').click(function () {
+            $('.header-info').toggleClass("icon-style");
+        });
     </script>
     <script>
-        $('.search-form').click(function(){
-    $('.header-info').toggleClass("search-style");
-});
+        $('.search-form').click(function () {
+            $('.header-info').toggleClass("search-style");
+        });
     </script>
     <script>
         function myFunction(x) {
-          x.classList.toggle("change");
+            x.classList.toggle("change");
         }
-        </script>
+    </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <!-- Script End -->
 </body>
 
 </html>
